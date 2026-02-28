@@ -1,0 +1,14 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE legacy_sessions (
+  id INTEGER PRIMARY KEY,
+  token TEXT NOT NULL,
+  user_id INTEGER REFERENCES users(id)
+);
+
+CREATE INDEX idx_users_email ON users (email);

@@ -1,0 +1,33 @@
+{
+  "name": "schema-drift",
+  "version": "1.0.0",
+  "description": "Database schema change detector with risk scoring. SQL + Prisma support.",
+  "bin": {
+    "schema-drift": "./bin/drift.js"
+  },
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "node bin/drift.js --help"
+  },
+  "keywords": [
+    "database",
+    "schema",
+    "migration",
+    "diff",
+    "prisma",
+    "sql",
+    "cli",
+    "devops"
+  ],
+  "author": "Nicholas Ashkar",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
