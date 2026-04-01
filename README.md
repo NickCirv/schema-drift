@@ -1,3 +1,5 @@
+![Banner](banner.svg)
+
 # schema-drift
 
 **Your database schema just changed. Is it safe?**
